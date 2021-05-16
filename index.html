@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="app.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <title>ImageFinder</title>
     <style>
       .wrapper {
@@ -34,16 +40,21 @@
   <body>
     <div class="wrapper">
       <form id="form1">
-        <input name="text" type="text" placeholder="Enter CC Data here" value="" />
-        <button id="submit">Get Closest Image</button>
+        <input name="text" type="text" placeholder="Enter CC Data here" value="" class="form-control" />
+        <button id="submit" class="btn btn-secondary">Get Closest Image</button>
       </form>
+      <ul class="list-group">
+        <li class="list-group-item">image :&nbsp;&nbsp;&nbsp;&nbsp;<span id="result"></span></li>
+        <li class="list-group-item">distance :&nbsp;&nbsp;&nbsp;&nbsp;<span id="distance"></span></li>
+        <li class="list-group-item">X/Y :&nbsp;&nbsp;&nbsp;&nbsp;<span id="coords"></span></li>
+      </ul>
       <div>
         <br />
-        <div>image :&nbsp;&nbsp;&nbsp;&nbsp;<span id="result"></span></div>
+        <div></div>
         <br />
-        <div>distance :&nbsp;&nbsp;&nbsp;&nbsp;<span id="distance"></span></div>
+        <div></div>
         <br />
-        <div>X/Y :&nbsp;&nbsp;&nbsp;&nbsp;<span id="coords"></span></div>
+        <div></div>
       </div>
     </div>
   </body>
