@@ -6,13 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="app.js" defer></script>
     <title>ImageFinder</title>
+    <style>
+      .wrapper {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        width: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        justify-content: center;
+        align-items: space-between;
+      }
+      button {
+        padding: 0.3rem;
+        margin: 1rem 0;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
-    <form id="form1">
-      <input name="text" type="text" placeholder="Enter CC Data here" value="" />
-      <button id="submit">Get Closest Image</button>
-    </form>
-    <br />
-    <div id="result"></div>
+    <div class="wrapper">
+      <form id="form1">
+        <input name="text" type="text" placeholder="Enter CC Data here" value="" />
+        <button id="submit">Get Closest Image</button>
+      </form>
+      <div>
+        <br />
+        <div>image :&nbsp;&nbsp;&nbsp;&nbsp;<span id="result"></span></div>
+        <br />
+        <div>distance :&nbsp;&nbsp;&nbsp;&nbsp;<span id="distance"></span></div>
+        <br />
+        <div>X/Y :&nbsp;&nbsp;&nbsp;&nbsp;<span id="coords"></span></div>
+      </div>
+    </div>
   </body>
 </html>

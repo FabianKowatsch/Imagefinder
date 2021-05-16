@@ -91,5 +91,7 @@ function getClosestImage(vector, images) {
       closest = e;
     }
   });
+  document.getElementById("distance").innerHTML = distance;
+  document.getElementById("coords").innerHTML = closest[1] + " / " + closest[2];
   return closest[0];
 }
